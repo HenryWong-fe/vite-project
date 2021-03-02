@@ -1,0 +1,62 @@
+{
+  "name": "my-vite-vue-app",
+  "version": "0.0.0",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "test": "jest",
+    "test:preview": "http-server ./src/test/vueReport -p 3333 -c-1",
+    "dev": "vite --mode dev",
+    "dev:test": "vite --mode test",
+    "dev:prod": "vite --mode prod",
+    "build": "vite build --debug",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "ant-design-vue": "^2.0.0",
+    "axios": "^0.21.1",
+    "js-cookie": "^2.2.1",
+    "lodash-es": "^4.17.21",
+    "mockjs": "^1.1.0",
+    "vue": "^3.0.5",
+    "vue-router": "^4.0.4",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.17",
+    "@babel/preset-env": "^7.12.17",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@types/jest": "^26.0.20",
+    "@types/js-cookie": "^2.2.6",
+    "@types/node": "^14.14.31",
+    "@vitejs/plugin-vue": "^1.1.4",
+    "@vitejs/plugin-vue-jsx": "^1.1.0",
+    "@vue/compiler-sfc": "^3.0.5",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/test-utils": "^2.0.0-rc.1",
+    "autoprefixer": "^10.2.4",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.20.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.6.0",
+    "http-server": "^0.12.3",
+    "jest": "25.5.4",
+    "jest-vue-report": "^0.1.5",
+    "less": "^4.1.1",
+    "postcss": "^8.2.6",
+    "prettier": "^2.2.1",
+    "ts-jest": "^25.3.1",
+    "typescript": "^3.9.7",
+    "vite": "^2.0.0",
+    "vite-plugin-mock": "^2.1.4",
+    "vite-plugin-style-import": "^0.7.6",
+    "vitepress": "^0.12.2",
+    "vue-jest": "^5.0.0-alpha.7"
+  },
+  "jest-vue-report": {
+    "report-site": "src/test/vueReport"
+  }
+}
